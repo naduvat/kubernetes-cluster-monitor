@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-monitor-controller
+  namespace: sidecar-injector
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-monitor-controller
+  template:
+    metadata:
+      labels:
+        app: k8s-monitor-controller
+    spec:
+      containers:
+      - name: k8s-monitor-controller
+        image: "k8s-monitor-controller:latest"
+
