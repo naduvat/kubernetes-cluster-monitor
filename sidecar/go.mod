@@ -1,21 +1,12 @@
-module github.com/cisco/sidecar
+module github.com/kubernetes-cluster-monitor/sidecar
 
 go 1.14
 
 require (
-	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/sirupsen/logrus v1.4.2
 	k8s.io/api v0.18.3
-	k8s.io/apiextensions-apiserver v0.18.3
 	k8s.io/apimachinery v0.18.3
-	k8s.io/apiserver v0.18.3
-	k8s.io/cli-runtime v0.18.3
 	k8s.io/client-go v0.18.3
-	k8s.io/cloud-provider v0.18.3
-	k8s.io/component-base v0.18.3
-	k8s.io/kube-aggregator v0.18.3
-	k8s.io/kubectl v0.18.3
-	k8s.io/kubernetes v1.18.3
 )
 
 replace (
